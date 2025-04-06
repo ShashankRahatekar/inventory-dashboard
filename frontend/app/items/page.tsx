@@ -1,7 +1,11 @@
 import Table from "@/app/ui/components/table";
+import { getInventory } from "@/app/lib/data";
 
-export default function() {
+export default async function() {
+    const items = await getInventory();
+    console.log({items});
+    
     return <div>
-        <Table currentPage={1} query="" />
+        <Table items={items} />
     </div>
 }
