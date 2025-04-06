@@ -1,4 +1,3 @@
-// Example using pg
 import dotenv from 'dotenv';
 import { Pool } from 'pg';
 

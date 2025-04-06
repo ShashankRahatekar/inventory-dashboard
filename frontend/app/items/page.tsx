@@ -1,7 +1,7 @@
-import InvoicesTable from "@/app/ui/components/table";
+import Table from "@/app/ui/components/table";
 
 export default function() {
     return <div>
-        <InvoicesTable currentPage={1} query="" />
+        <Table currentPage={1} query="" />
     </div>
 }

@@ -1,11 +1,12 @@
-const express = require('express')
-const app = express()
-const port = 4000
+import express from 'express';
+import dotenv from 'dotenv';
+import itemRoutes from './routes/items.routes';
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+dotenv.config();
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+const app = express();
+app.use(express.json());
+
+app.use('/api/items', itemRoutes);
+
+export default app;
