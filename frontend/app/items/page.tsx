@@ -3,7 +3,6 @@ import { getInventory } from "@/app/lib/data";
 
 export default async function() {
     const items = await getInventory();
-    console.log({items});
     
     return <div>
         <Table items={items} />

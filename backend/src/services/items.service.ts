@@ -1,6 +1,6 @@
 // src/services/items.service.ts
 import { pool } from '../db';
-import { Item } from '../models/item.model';
+import { Item } from '../../../definitions/items.definition';
 
 export const getAllItems = async (): Promise<Item[]> => {
   const result = await pool.query('SELECT * FROM items');
