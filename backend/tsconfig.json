@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+      "types": ["node"],
+      "module": "commonjs",         // Or use "esnext" if you're using ESModules
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+    }
+  }
+  
